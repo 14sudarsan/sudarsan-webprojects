@@ -1,0 +1,107 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+.navbar{
+    background-color: #FD6569
+}
+.container{
+    padding: 10px;
+    
+}
+.book-container{
+    color:white;
+    background-color:black;
+    width: 35%;
+    display:inline-block;
+    margin: 20px;
+    padding: 15px;
+    border-radius:10px;
+    vertical-align: top;
+    
+    
+}
+.book-container button{
+    background-color: #FD6569;
+    border-radius: 15px;
+    width: 30%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.add-button{
+    border-radius: 100%;
+    background-color: #FD6569;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border:none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: large;
+}
+.popup-overlay{
+    background-color: black;
+    position: absolute;
+    opacity: 0.8;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index:1;
+    display: none;
+}
+.popup-box{
+    background-color: #FD6569;
+    width:40%;
+    padding: 40px;
+    position:absolute;
+    top:20%;
+    left: 20%;
+    z-index:2;
+    display: none;
+}
+.popup-box input{
+    width:100%;
+    margin: 5px;
+    border: none;
+    background: transparent;
+    font-size:large;
+    border-bottom:solid 2px;
+}
+.popup-box textarea{
+    width:100%;
+    background: transparent;
+    margin: 5px;
+    font-size: large;
+    border:none;
+     border-bottom:solid 2px;
+}
+.inner-button{
+    width: 50%;
+    position: absolute;
+    font-size:large;
+    border-radius:3px;
+    height: 50%;
+
+}
+.popup-box button{
+    width: 30%;
+    margin: 5px;
+    border:none;
+    border-radius:12px;
+    font-size: large;
+    background-color: black;
+    color: white;
+}
+.popup-box input::placeholder{
+   color: black;
+}
+.popup-box textarea::placeholder{
+   color: black;
+}
+    
+    
