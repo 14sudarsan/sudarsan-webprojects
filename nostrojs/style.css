@@ -1,0 +1,269 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.navbar-links{
+    display: flex;
+    column-gap: 20px;
+    font-size: larger;
+    
+}
+.navbar-links a{
+    text-decoration: none;
+    color: #1D232C;
+}
+.navbar-links{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+}
+.navbar-links a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+ .navbar-menu-button{
+     display: none;
+ }
+ @media screen and (max-width:700px){
+     .navbar-links{
+         display: none;
+     }
+     .navbar-menu-button{
+         display: block;
+     }
+     .images{
+        display:none;
+     }
+     .service{
+         display: none;
+     }
+     .service-2{
+        flex-direction: column;
+     }
+     
+    
+ }
+ 
+ .side-bar{
+     background-color:#1D232C;
+     width: 50%;
+     height: 100%;
+     position: fixed;
+     top: 0;
+     left: -60%;
+     transition: 2s;
+ }
+ .side-navbar-links{
+     padding: 20px;
+ }
+ .side-navbar-link {
+     font-size: larger;
+     margin-bottom: 30px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+.side-navbar-link  a{
+     color: white;
+     text-decoration: none;
+}
+.side-navbar-link  a:hover{
+    text-decoration: underline
+
+}
+
+ .x:hover{
+     
+     cursor: pointer;
+ }
+ .x{
+     text-align: right;
+     color: white;
+     font-size: larger;
+ }
+ 
+
+.navbar-menu-button button{
+    background-color: #1D232C;
+    color: white;
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 25px;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    gap:50px;
+    padding: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.btn-shop-now{
+    font-size: large;
+    color: white;
+    background-color: #1D232C;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+}
+.btn-shop-now:hover{
+    cursor: pointer;
+}
+.service{
+    padding: 20px;
+}
+
+.service-container-1{
+    display: flex;
+    justify-content: space-between;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    align-items: center;
+}
+.service-2-contents{
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #F2F4F7;
+}
+.service-2{
+    display: flex;
+    padding-left: 20px;;
+    padding-right: 20px;
+    justify-content: space-between;
+}
+.new-arrival{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 20px;
+}
+.new-arrival-head{
+    margin-left: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style:italic;
+
+}
+.new-arrival-container{
+    position: relative;
+    flex-basis: 20%;
+}
+.new-arrival button{
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-bottom:5%;
+    border-radius: 10px;
+    font-size: large;
+    color:black;
+    background-color: white;
+    font-style: bold;
+    margin-top: 10px;
+    position: absolute;
+    top:50%;
+    left: 18%;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.end-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+}
+.end-container input{
+    width: 80vw;
+    border:solid black 3px;
+    height: 5vh;
+}
+.end-container button{
+     margin-top: 30px;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     padding-left: 20px;
+     padding-right: 20px;
+     font-size: large;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-style: italic;
+     color: #F2F4F7;
+     background-color: #1D232C;
+     border: none;
+     border-radius: 5px;
+     margin-right: 10px;
+}
+.end-container h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+    
+
+}
+.end-container p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    font-style: italic;
+
+}
+.footer{
+    background-color: #1D232C;
+    color: #F2F4F7;
+    
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-top: 10px;
+}
+.footer h1{
+    font-size: x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+}
+.footer h3{
+    font-size: x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+}
+.footer p{
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+}
+.product-section{
+    margin-top: 20px;
+}
+.product-search{
+    width: 80%;
+    border: solid black 2px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+.product-search input{
+    border: none;
+    background: transparent;
+    width: 100%;
+
+}
+.product-search input:focus{
+    outline: none;
+    
+}
+.products{
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.product-box{
+    text-align: center;
+    flex-basis: 20%;
+}
+.product-box img{
+    border-radius: 10px;
+}
