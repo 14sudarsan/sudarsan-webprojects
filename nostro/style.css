@@ -1,0 +1,128 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.navbar-links{
+    display: flex;
+    column-gap: 20px;
+    font-size: larger;
+    
+}
+.navbar-links a{
+    text-decoration: none;
+    color: #1D232C;
+}
+.navbar-links{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+}
+.navbar-links a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+ .navbar-menu-button{
+     display: none;
+ }
+ @media screen and (max-width:700px){
+     .navbar-links{
+         display: none;
+     }
+     .navbar-menu-button{
+         display: block;
+     }
+     .images{
+        display:none;
+     }
+     .service-container-1{
+         display: none;
+     }
+     
+    
+ }
+ 
+ .side-bar{
+     background-color:#1D232C;
+     width: 50%;
+     height: 100%;
+     position: fixed;
+     top: 0;
+     left: -60%;
+     transition: 2s;
+ }
+ .side-navbar-links{
+     padding: 20px;
+ }
+ .side-navbar-link {
+     font-size: larger;
+     margin-bottom: 30px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+.side-navbar-link  a{
+     color: white;
+     text-decoration: none;
+}
+.side-navbar-link  a:hover{
+    text-decoration: underline
+
+}
+
+ .x:hover{
+     
+     cursor: pointer;
+ }
+ .x{
+     text-align: right;
+     color: white;
+     font-size: larger;
+ }
+ 
+
+.navbar-menu-button button{
+    background-color: #1D232C;
+    color: white;
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 25px;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    gap:50px;
+    padding: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.btn-shop-now{
+    font-size: large;
+    color: white;
+    background-color: #1D232C;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+}
+.btn-shop-now:hover{
+    cursor: pointer;
+}
+.service{
+    padding: 20px;
+}
+
+.service-container-1{
+    display: flex;
+    justify-content: space-between;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    align-items: center;
+    background-color: blue;
+    
+    
+}
+
+    
+
