@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;;
+    background-color: white;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color:#1D232C;
+    
+}
+.form{
+    width: 400px;
+    min-height: 400px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; ;
+    border-radius: 6px;
+
+}
+.form img{
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.form-title{
+    font-size: large;
+    padding-left: 30px;
+    font-weight: 500;
+}
+.form-group{
+    position: relative;
+    margin-top: 20px;
+    
+    height: 48px;
+    
+    
+    
+    
+}
+.form-control{
+    position: absolute;
+    background: none;
+    height: 48px;
+    width: 85%;
+    margin-left: 30px;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    border:1px solid #a1a1a1;
+    outline: none;
+    padding-left: 10px;
+    
+    font-size: medium;
+    font-weight: 600;
+    z-index: 1;
+}
+.form-label{
+    margin-left: 30px;
+    position: absolute;
+    left: 13px;
+    top: 13px;
+    color: #a1a1a1;
+    background-color:white;
+    padding: 0 6px;
+    font-size: 14px;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+.form-control:focus+ label
+{
+    top: -8px;
+    z-index: 10;
+    color:#1D232C;
+}
+.form-control:focus{
+    border: 1px solid #1D232C;
+}
+.form-control:valid+ label{
+    top: -8px;
+    z-index: 10;
+    color:#1D232C;
+}
+.form-control:valid{
+    border: 1px solid #1D232C;
+}
+
+.form-end{
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.form-end label{
+    font-weight: 300S;
+    font-family: 'Poppins', sans-serif;
+    font-size: medium;
+    padding-left: 5px;
+}
+.form-end input{
+    padding-left: 5px;
+}
+.form-forgot{
+    margin-left:30px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.form-forgot a{
+    text-decoration: none;
+    font-style: oblique;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: medium;
+}
+.form-forgot button{
+    margin-right: 30px;
+    width: 70px;
+    height: 30px;
+    font-size: medium;
+    color:whitesmoke;
+    background-color:#1D232C;
+    font-style: oblique;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+
+    
+    
+}
+.carrer{
+    margin-left: 30px;
+    font-size: larger;
+    font-weight: 900px;
+}
