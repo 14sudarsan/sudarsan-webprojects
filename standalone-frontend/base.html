@@ -4,27 +4,67 @@
 
 <head>
     <meta charset="UTF-8">
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <title>Chatbot</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="boxicons.min.css">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
-    <div class="nav-bar">
-            <img src="mainlogo.avif" width=100x100>
-             <p class="nav-links"><a  class="alink"href="">Home</a></p>
-           
-              <p class="nav-links"><a class="alink"href="">Contact</a></p>
-
-              <p class="nav-links"><a class="alink"href="">Feedback</a></p>
-            
-                <p class="nav-links"><a class="alink"href="">About Us</a></p>
-            
+	<nav>
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen' ></i>
+            <span class="logo navLogo"><a href="#">CARRER QUEST</a></span>
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="#">CARRER QUEST</a></span>
+                    <i class='bx bx-x siderbarClose'></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+					<li><a href="#faq">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="darkLight-searchBox " >
+                <div class="dark-light">
+                    <i class='bx bx-moon moon'></i>
+                    <i class='bx bx-sun sun'></i>
+                </div>
+            </div>
         </div>
+    </nav>
+  <!--<header class="header" data-aos="fade-top" data-aos-duration="3000">
+    <div class="portfolio">
+        <img src="mainlogo.avif" width="160x100">
+    </div>
+    <div class="menu-btn" id="menu-btn">
+        <i class='bx bx-menu' class="menu-btn" id="btn-menu"></i>
+    </div>
+    <div class="nav-bar">
+    <ul>
+        <li><a href="#home" class="active"  >Home</a></li>
+        <li><a href="about" >About </a></li>
+        <li><a href="#design" >Services</a></li>
+        <li><a href="contact.html" >Contact </a></li>
+
+    </ul>    
+    </div>
+   
+</header>-->
     <div class="mainframe">
         <img src="hd.jpg" width="150%" class="main-back">
         
-        <div class="heading">
+        <div class="heading" data-aos="fade-top" data-aos-duration="3000">
             <h1 class="heading-font">Your Bright Future Starts Here Now</h1>
         </div>
-         <div class="heading2">
+         <div class="heading2" data-aos="fade-top" data-aos-duration="3000">
             <h3 class="heading-font2">Finding your next job or career on Future forge</h3>
         </div>
 
@@ -32,10 +72,10 @@
    
     <div class="text">
                
-          <h1 class="right">FUTURE FORGE</h1>
+          <h1 class="right"  data-aos="fade-top" data-aos-duration="3000" id="about">FUTURE FORGE</h1>
     </div>
-    
-    <div class="gallery">
+    <button id="btn" class="speak-btn"  data-aos="fade-right" data-aos-duration="3000"><img src="play2.jpg" width="150x150"></button>
+    <div class="gallery" data-aos="fade-left" data-aos-duration="2000">
       <div>
           <button class="button">Future Forge provides the complete Job Suggestion for any kind of users</button>
       </div>
@@ -43,11 +83,15 @@
            <button class="button">Chat Bot is provided for the users to Suggest job roles based on their interests </button>
       </div>
       <div>
-            <button class="button">GovernmentExams Suggestion and Websites links are Provided Based on the interests of users</button>
+            <button class="button">Government exams Suggestion and Websites links are Provided Based on the interests of users</button>
       </div>
     </div>
     <hr></hr>
-    <section class="loader">
+    <div class="text">
+               
+      <h1 class="rightfeatures" data-aos="fade-top" data-aos-duration="3000">FEATURES</h1>
+</div>
+    <section class="loader" data-aos="fade-right" data-aos-duration="2500">
         <div class="slider" style="--i:0">
         </div>
           <div class="slider" style="--i:1">
@@ -59,14 +103,14 @@
           <div class="slider" style="--i:4">
         </div>
     </section>
-<div class="design">
+<div class="design" data-aos="fade-left" data-aos-duration="3000">
     <div class="design-card">
         <div class="first-content">
         </div>
         <div class="second-content">
-            <h1>FOCUS IS EVERYTHING</h1>
-            <p>Focusing is all about Determine yourself and Execute that properly</p>
-            <a>Benefits</a>
+            <h1>COMPLETE GUIDANCE</h1>
+            <p>Future Forge gives the clarity of quries for the users</p>
+            <a>Chatbot is Interactive for Users</a>
         </div>
     </div>
 
@@ -74,22 +118,22 @@
         <div class="first-content">
         </div>
         <div class="second-content">
-            <h1>FOCUS IS EVERYTHING</h1>
-            <p>Focusing is all about Determine yourself and Execute that properly</p>
-            <a>Benefits</a>
+            <h1>FUTURE FORGE </h1>
+            <p>Future Forge is interactive to users by Voice to give the purpose of app</p>
+            <a>top Click ME must be activated for interaction</a>
         </div>
     </div>
      <div class="design-card">
         <div class="first-content">
         </div>
         <div class="second-content">
-            <h1>FOCUS IS EVERYTHING</h1>
-            <p>Focusing is all about Determine yourself and Execute that properly</p>
-            <a>Benefits</a>
+            <h1>CHAT BOT</h1>
+            <p> Chatbot provide the job recommendation for the users and users voice input can be converted into text input</p>
+            <a>Use it for FREEE!</a>
         </div>
     </div>
 </div>
-<section class="loader">
+<section class="loader"  data-aos="fade-right" data-aos-duration="2500">
         <div class="slider" style="--i:0">
         </div>
           <div class="slider" style="--i:1">
@@ -102,15 +146,21 @@
         </div>
     </section>
 
-  <hr></hr>
+  <hr class="belowhr"></hr>
+  <div class="text">
+               
+    <h1 class="rightsuggestions" data-aos="fade-left" data-aos-duration="3000" id="services">SERVICES</h1>
+</div>
+    <div class="wrapper"  data-aos="fade-right"   data-aos-duration="3000">
+      <i id="left" class="fa-solid fa-angle-left"></i>
+       
 
-    <div class="wrapper">
-        <i id="left" class="fa-solid fa-angle-left"></i>
         <ul class="carousel">
-          <li class="card">
+          <li class="card" >
             <div class="img"><img src="10th.jpg" alt="img" draggable="false"></div>
             <h2>10th Students</h2>
             <span>Suggestions</span>
+            
           </li>
           <li class="card">
             <div class="img"><img src="12th.jpg" alt="img" draggable="false"></div>
@@ -140,32 +190,39 @@
         </ul>
         <i id="right" class="fa-solid fa-angle-right"></i>
       </div>
+    <hr class="suggestionhr"></hr>
+
 <div class="container">
     <div class="chatbox">
         <div class="chatbox__support">
             <div class="chatbox__header">
                 <div class="chatbox__image--header">
-                    <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                    <img src="mainlogo.avif " width="50x50" alt="image">
                 </div>
                 <div class="chatbox__content--header">
-                    <h4 class="chatbox__heading--header">Chat support</h4>
-                    <p class="chatbox__description--header">Hi. My name is Sam. How can I help you?</p>
+                    <h4 class="chatbox__heading--header">Future Forge</h4>
+                    <p class="chatbox__description--header">Job recommendation chatbot. How can I help you?</p>
                 </div>
             </div>
             <div class="chatbox__messages">
                 <div></div>
             </div>
             <div class="chatbox__footer">
-                <input type="text" placeholder="Write a message...">
-                <button class="chatbox__send--footer send__button">Send</button>
+                <input type="text" placeholder="Write a message..."  id="hear">
+                <button class="chatbox__send--footer send__button" >Send</button>
+                <button id="vvv" class="vbtn">Voice</button>
             </div>
         </div>
         <div class="chatbox__button">
-            <button><img src="./images/chatbox-icon.svg" /></button>
+            <button><img src="mainlogo.avif" width="50x50" /></button>
         </div>
     </div>
 </div>
- <div class="accordion">
+<div class="text">
+               
+  <h1 class="rightfaq" data-aos="fade-left" data-aos-duration="3000" id="faq">FAQ</h1>
+</div>
+ <div class="accordion"  data-aos="fade-right"   data-aos-duration="3000">
     <div class="image-box">
       <img src="mainImg.png" alt="">
     </div>
@@ -215,7 +272,7 @@
     </ul>
     </div>
   </div>
-<section class="loader">
+<section class="loaderfaq">
         <div class="slider" style="--i:0">
         </div>
           <div class="slider" style="--i:1">
@@ -229,9 +286,9 @@
     </section>
 
 </div>
-<section class="footer">
-      <div class="footer-row">
-        <div class="footer-col">
+<section class="footer"  width="100px" height ="100vh">
+      <div class="footer-row" data-aos="fade-top" data-aos-duration="2500" width="100vw">
+        <div class="footer-col" data-aos="fade-bottom" data-aos-duration="2500" width="100vw" >
           <h4>Info</h4>
           <ul class="links">
             <li><a href="#">About Us</a></li>
@@ -242,7 +299,7 @@
           </ul>
         </div>
 
-        <div class="footer-col">
+        <div class="footer-col" width="100%">
           <h4>Explore</h4>
           <ul class="links">
             <li><a href="#">Free Designs</a></li>
@@ -284,7 +341,13 @@
         </div>
       </div>
     </section>
-    <script src="./app.js"></script>
-
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        
+      });
+    </script>
 </body>
 </html>
+

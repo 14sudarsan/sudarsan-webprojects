@@ -176,3 +176,98 @@ wrapper.addEventListener("mouseleave", autoPlay);
        clickedLi.classList.toggle("showAnswer");
       });
     }
+
+var voice=document.getElementById("vvv");
+var hear=document.getElementById("hear");
+
+voice.addEventListener("click",function(){
+    var speech=true;
+    window.SpeechRecongnition=window.webkitSpeechRecognition;
+    const recognition= new SpeechRecongnition();
+    recognition.interimResults=true;
+  recognition.addEventListener("result",e=>{
+      const transcript= Array.from(e.results)
+      .map(result => result[0])
+      .map(result=>result.transcript)
+
+      hear.value=transcript;
+  })
+    if(speech==true){
+        recognition.start();
+    }
+})
+
+
+
+
+var speak=document.getElementById("btn");
+speak.addEventListener("click",()=>{
+   var msg="Welcome to FutureForge  ";
+   const utterance=new SpeechSynthesisUtterance(msg);
+   utterance.pitch=3;
+   utterance.rate=0.5;
+   utterance.volume=3;
+   speechSynthesis.speak(utterance);
+   var msgtwo="FutureForge is Completely a job Suggestion Processs for Carrer improvement";
+    const voicenxt=new SpeechSynthesisUtterance(msgtwo);
+   voicenxt.pitch=3;
+   voicenxt.rate=0.5;
+   voicenxt.volume=3;
+speechSynthesis.speak(voicenxt);
+
+
+   
+  
+
+
+
+});
+
+const body = document.querySelector("body"),
+      nav = document.querySelector("nav"),
+      modeToggle = document.querySelector(".dark-light"),
+      searchToggle = document.querySelector(".searchToggle"),
+      sidebarOpen = document.querySelector(".sidebarOpen"),
+      siderbarClose = document.querySelector(".siderbarClose");
+      let getMode = localStorage.getItem("mode");
+          if(getMode && getMode === "dark-mode"){
+            body.classList.add("dark");
+          }
+// js code to toggle dark and light mode
+      modeToggle.addEventListener("click" , () =>{
+        modeToggle.classList.toggle("active");
+        body.classList.toggle("dark");
+        // js code to keep user selected mode even page refresh or file reopen
+        if(!body.classList.contains("dark")){
+            localStorage.setItem("mode" , "light-mode");
+        }else{
+            localStorage.setItem("mode" , "dark-mode");
+        }
+      });
+// js code to toggle search box
+        searchToggle.addEventListener("click" , () =>{
+        searchToggle.classList.toggle("active");
+      });
+ 
+      
+//   js code to toggle sidebar
+sidebarOpen.addEventListener("click" , () =>{
+    nav.classList.add("active");
+});
+body.addEventListener("click" , e =>{
+    let clickedElm = e.target;
+    if(!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")){
+        nav.classList.remove("active");
+    }
+});
+
+var about = document.querySelector(".right");
+modeToggle.addEventListener ("click" ,()=>{
+    about.style.backgroundImage="url('funny.gif')";
+});
+
+function change(){
+    about.body.style.backgroundImage="url('funny.gif')";
+}
+
+
